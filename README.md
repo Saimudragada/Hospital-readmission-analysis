@@ -47,6 +47,32 @@ Top states with highest readmission rates:
 - Pneumonia (PN)
 - COPD
 
+  ## Key Visualizations
+
+### Distribution of Hospital Readmission Ratios
+![Readmission Distribution](images/readmission_distribution.png)
+*Most hospitals cluster around the expected rate of 1.0, with significant variation in both directions*
+
+### Readmission Rates by Medical Condition
+![Readmission by Condition](images/readmission_by_condition.png)
+*All six tracked conditions show similar average readmission patterns around 1.0*
+
+### Hospital Type Analysis
+![Hospital Type Analysis](images/readmission_by_hospital_type.png)
+*Acute Care Hospitals represent the majority with 54% high-risk rate*
+
+### Hospital Star Rating vs Readmission Performance
+![Rating vs Readmission](images/hospital_rating_vs_readmission.png)
+*Clear inverse relationship: 1-star hospitals have 79% high-risk rate vs 33% for 5-star hospitals*
+
+### Feature Importance for Prediction Model
+![Feature Importance](images/feature_importance.png)
+*Readmission Gap is the dominant predictor with near-perfect importance*
+
+### Model Performance Comparison
+![ROC Curves](images/roc_curve_comparison.png)
+*All three models achieve perfect classification (AUC = 1.000)*
+
 ## Methodology
 
 ### Data Processing
