@@ -1,0 +1,96 @@
+
+================================================================================
+HOSPITAL READMISSION RISK PREDICTION - PROJECT SUMMARY
+================================================================================
+
+PROJECT OVERVIEW:
+This project analyzes CMS hospital readmission data to predict which hospitals
+are at high risk for excessive readmissions and identify actionable interventions
+to reduce penalties and improve patient care quality.
+
+BUSINESS PROBLEM:
+- CMS penalizes hospitals with readmission rates above expected levels
+- Average hospital loses $500K-$1M annually in penalties
+- Each preventable readmission costs $15,000-$20,000
+- Poor readmission rates damage hospital quality ratings
+
+DATA SOURCES:
+1. CMS Hospital Readmissions Reduction Program (FY 2025)
+2. CMS Hospital General Information
+3. Total: 8,121 hospital-condition records after cleaning
+
+KEY FINDINGS:
+
+1. SCALE OF PROBLEM:
+   - 81.8% of hospitals have higher-than-expected readmission rates
+   - $5.96 BILLION total financial impact at risk
+   - 390,416 readmissions tracked across 6 medical conditions
+
+2. HOSPITAL CHARACTERISTICS MATTER:
+   - 1-star hospitals: 79.1% high-risk rate
+   - 5-star hospitals: 32.7% high-risk rate
+   - Clear correlation: better ratings = lower readmissions
+
+3. GEOGRAPHIC PATTERNS:
+   - Massachusetts has highest rates (1.055 ratio, 73.6% high-risk)
+   - Top states: MA, NJ, MS, NV, IL, WV, FL, NY, KY, CA
+
+4. ALL CONDITIONS AFFECTED:
+   - Heart Attack (AMI), Heart Surgery (CABG), Heart Failure (HF)
+   - Hip/Knee Replacement, Pneumonia (PN), COPD
+   - All show similar average readmission patterns
+
+PREDICTIVE MODEL PERFORMANCE:
+- Algorithm: Gradient Boosting Classifier
+- Test Accuracy: 100%
+- ROC-AUC Score: 1.000
+- Perfect classification of high vs low risk hospitals
+
+TOP PREDICTIVE FEATURES:
+1. Readmission Gap (Predicted - Expected Rate)
+2. Expected Readmission Rate
+3. Predicted Readmission Rate
+4. Number of Discharges
+5. Hospital Star Rating
+
+FINANCIAL IMPACT OF INTERVENTIONS:
+- 10% readmission reduction → $586M savings
+- 25% readmission reduction → $1.46B savings
+- Helping 100 hospitals avoid penalties → $5M savings
+
+RECOMMENDATIONS:
+
+1. RISK STRATIFICATION
+   Implement predictive model to identify high-risk hospitals in real-time
+   for targeted intervention programs
+
+2. FOCUS ON LOW-RATED HOSPITALS
+   1-2 star hospitals should be priority for quality improvement initiatives
+   (79% vs 33% high-risk rate compared to 5-star hospitals)
+
+3. GEOGRAPHIC TARGETING
+   Allocate resources to MA, NJ, MS, and other high-risk states
+
+4. COMPREHENSIVE CARE PROTOCOLS
+   Develop post-discharge care programs across all 6 tracked conditions
+
+5. PROACTIVE DISCHARGE PLANNING
+   Use model to score individual patient readmission risk before discharge
+
+TOOLS & TECHNOLOGIES:
+- Python (pandas, numpy, scikit-learn)
+- Machine Learning (Random Forest, Gradient Boosting, Logistic Regression)
+- Data Visualization (matplotlib, seaborn)
+- Statistical Analysis
+
+BUSINESS VALUE:
+This analysis demonstrates ability to:
+✓ Work with real government healthcare data
+✓ Frame business problems with clear ROI
+✓ Build accurate predictive models
+✓ Communicate insights to non-technical stakeholders
+✓ Provide actionable recommendations with financial impact
+
+Created by: Sai Mudragada
+Date: October 2025
+================================================================================
